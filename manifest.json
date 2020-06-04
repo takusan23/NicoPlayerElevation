@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "NicoPlayerElevation",
+    "version": "1.0.0",
+    "description": "ニコ動・ニコ生のプレイヤーに影をつけて立体感を出します",
+    "icons": {
+        "48": "icons/48.png",
+        "128": "icons/128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.nicovideo.jp/watch/*",
+                "https://live2.nicovideo.jp/watch/*"
+            ],
+            "js": [
+                "elevation.js"
+            ]
+        }
+    ]
+}
